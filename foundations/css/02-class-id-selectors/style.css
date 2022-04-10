@@ -1,0 +1,21 @@
+/* style.css */
+
+.odd-num {
+  background-color: #ffc0cb;
+  font-family: Verdana, "Dejavu Sans", sans-serif;
+}
+
+#sec-element {
+  color: #0000ff;
+  font-size: 36px;
+}
+
+.odd-num.third-element {
+  font-size: 24px;
+}
+
+#fourth-element {
+  background-color: #20b2aa;
+  font-size: 24px;
+  font-weight: bold;
+}
