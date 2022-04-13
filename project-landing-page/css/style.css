@@ -32,3 +32,11 @@ body {
   color: #e5e7eb;
   text-decoration: none;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 150px;
+  padding-right: 150px;
+}
