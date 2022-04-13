@@ -28,7 +28,7 @@ body {
   gap: 30px;
 }
 
-.header a {
+.header-links a {
   color: #e5e7eb;
   text-decoration: none;
 }
