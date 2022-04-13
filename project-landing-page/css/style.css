@@ -6,6 +6,7 @@ body {
   min-height: 100vh;
 }
 
+/*header section style*/
 .header {
   background-color: #1f2937;
   display: flex;
@@ -17,7 +18,7 @@ body {
 }
 
 .logo-text {
-  font-size: 24px;
+  font-size: 30px;
   color: #f9faf8;
   font-weight: bold;
 }
@@ -33,10 +34,52 @@ body {
   text-decoration: none;
 }
 
+/*Whole content section common styles*/
 .content {
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+
+/*Intro section with the HERO text and subtext. with buttons and pictures*/
+.intro-sec {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px;
   padding-left: 150px;
   padding-right: 150px;
+  gap: 50px;
+}
+
+.left-side {
+  padding-right: 20px;
+}
+
+.left-side h1 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #f9faf8;
+}
+.left-side h2 {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.left-side button {
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #3882f6;
+  color: #e5e7eb;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+}
+
+.right-side img {
+  height: 400px;
+  width: auto;
 }
