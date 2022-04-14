@@ -59,7 +59,7 @@ body {
 
 .left-side h1 {
   font-size: 36px;
-  font-weight: 900;
+  font-weight: bolder;
   color: #f9faf8;
 }
 .left-side h2 {
@@ -82,4 +82,47 @@ body {
 .right-side img {
   height: 400px;
   width: auto;
+}
+
+/*style section for the second part of the 
+content div where there are 4 pictures with captions*/
+.img-quote-sec {
+  padding: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-quote-sec h1 {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
+}
+
+.all-img {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.each-img-sub {
+  width: 200px;
+  height: auto;
+  color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.each-img-sub img {
+  width: 200px;
+  height: 200px;
+  border: solid;
+  border-radius: 15px;
+  border-color: #3882f6;
+  border-width: 5px;
 }
