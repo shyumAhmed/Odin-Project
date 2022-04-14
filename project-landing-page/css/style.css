@@ -126,3 +126,26 @@ content div where there are 4 pictures with captions*/
   border-color: #3882f6;
   border-width: 5px;
 }
+
+/*Quotation section*/
+.quote-sec {
+  padding: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #e5e7eb;
+}
+
+.quote-sec p {
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+}
+
+.quote-sec h2 {
+  font-size: 30px;
+  color: #1f2937;
+}
