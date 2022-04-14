@@ -185,3 +185,15 @@ content div where there are 4 pictures with captions*/
 .sign-up-sec h3 {
   font-size: 20px;
 }
+
+/*Footer sections*/
+.footer {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  padding-left: 150px;
+  padding-right: 150px;
+  color: #e5e7eb;
+}
