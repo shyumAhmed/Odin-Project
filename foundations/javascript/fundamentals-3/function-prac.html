@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Function Practice</title>
+  </head>
+  <body>
+    <h1>Function 1</h1>
+    <p class="para1"></p>
+
+    <h1>Function 2</h1>
+    <canvas class="canva"> </canvas>
+
+    <h1>Function 3</h1>
+    <p class="para3"></p>
+    <script>
+      //function 1 practice
+      const names = [
+        "Chris",
+        "Li Kang",
+        "Anne",
+        "Francesca",
+        "Mustafa",
+        "Tina",
+        "Bert",
+        "Jada",
+      ];
+      const para = document.querySelector(".para1");
+      const para3 = document.querySelector(".para3");
+      // Add your code here
+      function random(from, to) {
+        return Math.floor(Math.random(from) * to);
+      }
+
+      function chooseName() {
+        return names[random(0, 7)];
+      }
+
+      para.textContent = chooseName();
+
+      //function 2
+      function drawRectangle() {
+        const canvas = document.querySelector(".canva");
+        const ctx = canvas.getContext("2d");
+
+        const x = 50;
+        const y = 60;
+        const width = 100;
+        const height = 75;
+        const color = "blue";
+
+        ctx.fillRect(x, y, width, height);
+      }
+      drawRectangle();
+
+      //function 3
+      const shortNames = names.filter((name) => {
+        return name.length < 5;
+      });
+      para3.textContent = shortNames;
+    </script>
+  </body>
+</html>
