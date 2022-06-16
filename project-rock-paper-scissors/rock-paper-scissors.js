@@ -1,6 +1,17 @@
-const content = document.querySelector(".content");
-const div = document.createElement("div");
-content.appendChild(div);
+const dispBoardDiv = document.querySelector(".display-board");
+const compSideDiv = document.querySelector(".computer-side");
+const playerDispDiv = document.createElement("div");
+const compDispDiv = document.createElement("div");
+const roundWinnerDiv = document.createElement("div");
+const gameWinnerDiv = document.createElement("div");
+const roundHeader = document.createElement("h3");
+const img = document.createElement("img");
+dispBoardDiv.appendChild(roundHeader);
+dispBoardDiv.appendChild(playerDispDiv);
+dispBoardDiv.appendChild(compDispDiv);
+dispBoardDiv.appendChild(roundWinnerDiv);
+dispBoardDiv.appendChild(gameWinnerDiv);
+
 let clicked = "";
 let compTally = 0;
 let playerTally = 0;
@@ -12,7 +23,6 @@ function computerPlay() {
 }
 
 function playerSelection(id) {
-  div.textContent = id;
   clicked = id;
   update();
 }
@@ -41,26 +51,31 @@ function results(compSel, playerSel) {
     return "There is a tie";
   } else {
     playerTally++;
-    return "Player wins this round!";
+    return "You this round!";
   }
 }
 
 function update() {
   const comp = computerPlay();
-  console.log("Computer Input: " + comp);
-  console.log("player input: " + clicked);
+
+  img.src = "./img/" + comp + ".png";
+  compSideDiv.appendChild(img);
+
+  roundHeader.textContent = "Round " + round + "/5";
+  compDispDiv.textContent = "Computer Selected: " + comp;
+  playerDispDiv.textContent = "Player Selected: " + clicked;
 
   const res = results(comp, clicked);
-  console.log(res);
+  roundWinnerDiv.textContent = res;
 
   console.log("");
   if (round >= 5) {
     if (compTally > playerTally) {
-      console.log("Computer is the Game Winner!");
+      gameWinnerDiv.textContent = "Computer is the game Winner!";
     } else if (compTally < playerTally) {
-      console.log("Player is the Game Winner!");
+      gameWinnerDiv.textContent = "You're the game Winner!";
     } else {
-      console.log("The game is tied ");
+      gameWinnerDiv.textContent = "The game is Tied";
     }
   }
 }

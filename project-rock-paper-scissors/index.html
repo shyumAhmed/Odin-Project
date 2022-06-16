@@ -3,12 +3,34 @@
   <head>
     <title>Rock Paper Scissors Game</title>
     <script src="rock-paper-scissors.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h1>ROCK, PAPER, SCISSORS GAME</h1>
     <div class="content">
-    <button id="rock"" >Rock</button>
-    <button id="paper" >Paper</button>
-    <button id="scissors" >Scissors</button>
+      <div class="player-side">
+        <h3>PLAYER</h3>
+        <div class="player-option">
+          <img src="./img/rock.png" />
+          <button id="rock">Rock</button>
+        </div>
+        <div class="player-option">
+          <img src="./img/paper.png" />
+          <button id="paper">Paper</button>
+        </div>
+        <div class="player-option">
+          <img src="./img/scissors.png" />
+          <button id="scissors">Scissors</button>
+        </div>
+      </div>
+
+      <div class="middle-section">
+        <div><h2>Display Board</h2></div>
+        <div class="display-board">Click Rock, Paper or Scissors</div>
+      </div>
+      <div class="computer-side">
+        <h3>COMPUTER</h3>
+      </div>
     </div>
   </body>
 </html>
