@@ -1,0 +1,27 @@
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: red;
+  height: 100vh;
+  color: rgba(0, 0, 0, 0.918);
+}
+header button {
+  background: red;
+}
+header button:hover {
+  color: aqua;
+}
+
+.contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: teal;
+}
+
+/*# sourceMappingURL=style.css.map */
